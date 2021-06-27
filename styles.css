@@ -1,13 +1,140 @@
-* {
+/* Importing google font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+/* Basic styling for all elements*/
+*, 
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-:root {
-
+a {
+    text-decoration: none;
+    color: var(--clr-secondary-color) ;
 }
 
-nav {
 
+body {
+    background-color: var(--clr-primary-color);
+    font-family: 'Roboto Slab'; /* Making Roboto Slab the universal font */
+}
+
+header h1 {
+    font-size: 42px;
+}
+/* variables for colors, gradient, box-shadow for webpage*/
+:root {
+    --clr-primary-color:#D7F5D5;
+    --clr-secondary-color: #a83dac;
+    --clr-box-shadow: ;
+}
+
+.logo {
+    font-family: 'Roboto Slab';
+}
+
+/* Removing list style from navigation list*/
+nav li {
+    list-style: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Changing navigation*/
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 3px;
+}
+
+.preload {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+    background: var(--clr-primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5 ease-out;
+}
+
+.preload-finish {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.preload h1 {
+    position: absolute;
+    top: 50%;
+    margin: 5px;
+    padding: 3px;
+    font-size: 64px;
+    transform: translateY(-75%);
+    color: white;
+    animation: anim 1s ease-in-out infinite alternate;
+}
+
+.toggle-square {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    margin: 5px;
+    padding: 3px;
+    height: 50px;
+    width: 50px;
+    background-color: grey;
+}
+
+.coin1, 
+.coin2,
+.coin3 {
+    height: 20em;
+    position: absolute;
+    right: 0%;
+    z-index: -1;
+}
+
+.coin1 {
+    top: 25%;
+    transform: translate(100%, -25%);
+    animation: coins ease infinite 1.5s;
+}
+
+.coin2 {
+    top: 50%;
+    transform: translate(100%, -50%);
+    animation: coins ease infinite 3s;
+}
+
+.coin3 {
+    top: 75%;
+    transform: translate(100%, -75%);
+    animation: coins ease infinite 2s;
+}
+
+section {
+    height: 200px;
+}
+
+/* */
+@keyframes anim {
+    from {
+        transform: translateY(-30px);
+    }
+    to {
+        transform: translateY(30px);
+    }
+}
+
+@keyframes coins {
+    from {
+        right: 0%;
+    }
+     to {
+         right: 130%;
+    }
 }
