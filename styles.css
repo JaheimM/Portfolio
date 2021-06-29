@@ -1,8 +1,8 @@
 /* Importing google font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
 
 /* Basic styling for all elements*/
-*, 
+*,
 *::before,
 *::after {
     box-sizing: border-box;
@@ -10,44 +10,114 @@
     padding: 0;
 }
 
-a {
-    text-decoration: none;
-    color: var(--clr-secondary-color) ;
+/* variables for colors, gradient, box-shadow for webpage*/
+:root {
+    --clr-primary-color: #b8d8ba;
+    --clr-secondary-color: #2c2528;
+    --clr-box-shadow: ;
 }
 
+a {
+    text-decoration: none;
+    color: var(--clr-secondary-color);
+}
 
 body {
     background-color: var(--clr-primary-color);
-    font-family: 'Roboto Slab'; /* Making Roboto Slab the universal font */
+    font-family: "Monsterrat";
+    /* Making Roboto Slab the universal font */
+    margin: 0.8em;
+    padding: 0.5em;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#info-1 {
+    font-size: 36px;
+    width: 80%;
+}
+
+#info-1 p {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    padding: 3px;
 }
 
 header h1 {
     font-size: 42px;
 }
-/* variables for colors, gradient, box-shadow for webpage*/
-:root {
-    --clr-primary-color:#D7F5D5;
-    --clr-secondary-color: #a83dac;
-    --clr-box-shadow: ;
+
+social {
+    position: absolute;
+    position: fixed;
+    top: 80%;
+}
+
+.line {
+    border-left: 3px solid var(--clr-secondary-color);
+    height: 100px;
+    margin-left: 1.2em;
+}
+
+social li {
+    list-style-type: none;
+}
+
+social img {
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    padding: 3px;
 }
 
 .logo {
-    font-family: 'Roboto Slab';
+    font-family: "Roboto Slab";
+    font-weight: bold;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 3px;
+    flex-wrap: wrap;
 }
 
 /* Removing list style from navigation list*/
 nav li {
     list-style: none;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
+    float: left;
+    margin-left: 1em;
 }
 
 /* Changing navigation*/
 nav ul {
     display: flex;
-    justify-content: space-between;
-    margin: 5px;
-    padding: 3px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
 }
 
 .preload {
@@ -60,6 +130,7 @@ nav ul {
     justify-content: center;
     align-items: center;
     transition: opacity 0.5 ease-out;
+    z-index: 1;
 }
 
 .preload-finish {
@@ -79,17 +150,15 @@ nav ul {
 }
 
 .toggle-square {
-    position: absolute;
-    top: 0;
-    right: 50%;
-    margin: 5px;
-    padding: 3px;
+    display: flex;
+    justify-content: center;
     height: 50px;
     width: 50px;
     background-color: grey;
+    cursor: pointer;
 }
 
-.coin1, 
+.coin1,
 .coin2,
 .coin3 {
     height: 20em;
@@ -117,7 +186,7 @@ nav ul {
 }
 
 section {
-    height: 200px;
+    height: 25em;
 }
 
 /* */
@@ -125,6 +194,7 @@ section {
     from {
         transform: translateY(-30px);
     }
+
     to {
         transform: translateY(30px);
     }
@@ -134,7 +204,24 @@ section {
     from {
         right: 0%;
     }
-     to {
-         right: 130%;
+
+    to {
+        right: 130%;
+    }
+}
+
+@keyframes up-down {
+    from {
+        transform: translateY(-10px);
+    }
+
+    to {
+        transform: translateY(10px);
+    }
+}
+
+@media screen and (max-width: 720px) {
+    nav ul {
+        display: none;
     }
 }
