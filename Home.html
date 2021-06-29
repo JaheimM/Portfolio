@@ -1,51 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jah.Dev</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-                        <!-- Preloader -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Preloader -->
     <div class="preload">
-        <h1>Loading the website...</h1>
-        <img src="images/preloader coin 1.png" class="coin1" alt="coin1">
-        <img src="images/preloader coin 2.png" class="coin2" alt="COin2">
-        <img src="images/preloader coin 3.png" class="coin3" alt="Coin3">
+      <h1>Loading the website...</h1>
+      <img src="images/preloader coin 1.png" class="coin1" alt="coin1" />
+      <img src="images/preloader coin 2.png" class="coin2" alt="COin2" />
+      <img src="images/preloader coin 3.png" class="coin3" alt="Coin3" />
     </div>
-    <main>  
-        <div class="toggle-square">
-        </div>
-                        <!-- Navigation links -->
-        <nav> 
-            <ul>
-                        <!-- Logo -->
-                <div class="logo">
-                    <a href="Home.html">Jah.Dev</a>
-                </div>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="Projects.html">Projects</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-                <li><a href="Socials.html">Socials</a></li>
-            </ul>
+    <main>
+      <!-- Navigation links -->
+      <div class="container">
+        <nav>
+          <!-- Logo -->
+          <a href="Home.html" class="logo">Jah.Dev</a>
+          <div class="toggle-square"></div>
+          <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
         </nav>
-        <social>
-            <ul>
-                <li><a href="https://github.com/JaheimM" target="_blank"><img src="images/iconfinder_853360_github_icon_64px.png" alt="Github logo"></a></li>
-                <li><a href="https://www.linkedin.com/in/jahiem-mcleod-5449a61b5/" target="_blank"><img src="images/iconfinder_853357_linkedin_icon_64px.png" alt="Linkedin logo"></a></li>
-                <li><a href="" target="_blank"><img src="images/iconfinder_3709561_ig_instagram_instagram icon_social media_icon_64px.png" alt="Instagram logo"></a></li>
-            </ul>
-        </social>
-                        <!-- Information -->
-        <section class="wrapper">
-            <header>
-                <h1>Jahiem Mcleod </h1>
-                <h3> Front-end web developer</h3>
-            </header>
-        </section>
+      </div>
+      <!--Social links with images-->
+      <social>
+        <ul>
+          <li>
+            <a href="https://github.com/JaheimM" target="_blank"
+              ><img
+                src="images/iconfinder_853360_github_icon_64px.png"
+                alt="Github logo"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/jahiem-mcleod-5449a61b5/"
+              target="_blank"
+              ><img
+                src="images/iconfinder_853357_linkedin_icon_64px.png"
+                alt="Linkedin logo"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><img
+                src="images/iconfinder_3709561_ig_instagram_instagram icon_social media_icon_64px.png"
+                alt="Instagram logo"
+            /></a>
+          </li>
+        </ul>
+        <div class="line"></div>
+      </social>
+      <!-- Information -->
+      <section>
+        <header class="parent">
+            <h1>Jahiem Mcleod</h1>
+            <h3>Front-end web developer</h3>
+        </header>
+      </section>
+      <section class="wrapper">
+        <div id="info-1">
+          <p>
+            Born and raised in NYC. Years of experience working with HTML, CSS,
+            Javascript, and React. I develop concepts for websites using digital
+            art tools. Such as Figma or clipstudio paint.
+          </p>
+        </div>
+      </section>
     </main>
-</body>
-<script src="app.js"></script>
+  </body>
+  <script src="app.js"></script>
 </html>
