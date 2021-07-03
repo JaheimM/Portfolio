@@ -1,8 +1,8 @@
 // Function to get rid of preloader
 
-window.addEventListener('load', () => {
+window.addEventListener("load", () => {
     const preload = document.querySelector(".preload");
-    preload.classList.add("preload-finish")
+    preload.classList.add("preload-finish");
 });
 
 smoothScroll.init();
