@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jah.Dev</title>
     <link rel="stylesheet" href="styles.css" />
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body>
@@ -22,7 +23,11 @@
         <nav>
           <!-- Logo -->
           <a href="Home.html" class="logo">Jah.Dev</a>
-          <div class="toggle-square"></div>
+          <div class="Hamburger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
           <ul>
             <li><a href="Home.html">Home</a></li>
             <li><a href="Projects.html">Projects</a></li>
@@ -60,22 +65,35 @@
         <div class="line"></div>
       </social>
       <!-- Information -->
-      <section>
-        <header class="parent">
-            <h1>Jahiem Mcleod</h1>
-            <h3>Front-end web developer</h3>
-        </header>
-      </section>
-      <section class="wrapper">
-        <div id="info-1">
-          <p>
-            Born and raised in NYC. Years of experience working with HTML, CSS,
-            Javascript, and React. I develop concepts for websites using digital
-            art tools. Such as Figma or clipstudio paint.
-          </p>
-        </div>
-      </section>
+      <div class="container">
+        <section class="intro-wrapper1">
+          <div id="info-1">
+            <p>
+              Hello, I'm Jahiem Mcleod a Front-end Web developer and UI/UX
+              designer based in NYC.
+            </p>
+          </div>
+        </section>
+        <section id="2" class="intro-wrapper2">
+          <div data-aos="fade-down">
+            <p>
+              I was born in 2001 and raised completely in NYC. My web
+              Development journey began when I was in my freashman year of
+              highschool and developed from there.
+            </p>
+          </div>
+        </section>
+      </div>
     </main>
+    <footer>
+
+    </footer>
   </body>
   <script src="app.js"></script>
+   <script src="https://unpkg.com/aos@next/dist/aos.js">
+    </script>
+  <script>
+    AOS.init();
+  </script>
+    <script src="script.js"></script>
 </html>
