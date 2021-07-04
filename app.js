@@ -5,9 +5,21 @@ window.addEventListener("load", () => {
     preload.classList.add("preload-finish");
 });
 
-smoothScroll.init();
+
 
 // toggle nav links
 
-const Toggler = document.getElementsByClassName("toggle-square");
-const navUL = document.getElementsByClassName("navigation");
+const navigation = () => {
+    
+    const links = document.querySelector(".links");
+    const burger = document.querySelector(".burger");
+
+burger.addEventListener('click', () => {
+    links.classList.toggle('show-links')
+    burger.classList.toggle('toggle')
+});
+}
+
+navigation();
+
+smoothScroll.init();

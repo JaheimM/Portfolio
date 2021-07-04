@@ -22,17 +22,20 @@
       <div class="container">
         <nav>
           <!-- Logo -->
-          <a href="Home.html" class="logo">Jah.Dev</a>
-          <div class="Hamburger">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+          <div class="logo">
+              <a href="Home.html">Jah.Dev</a>
           </div>
-          <ul>
+         
+          <ul class="links">
             <li><a href="Home.html">Home</a></li>
             <li><a href="Projects.html">Projects</a></li>
             <li><a href="Contact.html">Contact</a></li>
-          </ul>
+          </ul>   
+          <div class="burger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>  
         </nav>
       </div>
       <!--Social links with images-->
@@ -67,14 +70,17 @@
       <!-- Information -->
       <div class="container">
         <section class="intro-wrapper1">
-          <div id="info-1">
+          <div id="1">
             <p>
               Hello, I'm Jahiem Mcleod a Front-end Web developer and UI/UX
               designer based in NYC.
             </p>
           </div>
         </section>
-        <section id="2" class="intro-wrapper2">
+        <section id="2" class="intro-wrapper2" 
+        data-aos="fade-in"
+        data-aos-offset="500"
+        >
           <div data-aos="fade-down">
             <p>
               I was born in 2001 and raised completely in NYC. My web
@@ -83,17 +89,35 @@
             </p>
           </div>
         </section>
+        <section id="3" class="intro-wrapper3">
+          <div data-aos="flip-right" class="color-1">
+            <p>
+              HTML, CSS, Javascript, React.Js, and Node.
+            </p>
+          </div>
+          <div data-aos="flip-left" class="color-2">
+            <p>
+              I can create the website that you want.
+            </p>
+          </div>
+        </section>
+        <section>
+          <h1>Projects</h1>
+          <div>
+            
+          </div>
+        </section>
       </div>
     </main>
     <footer>
 
     </footer>
   </body>
-  <script src="app.js"></script>
+  <!--Javascript library and Scripts-->
+   <script src="app.js"></script>
    <script src="https://unpkg.com/aos@next/dist/aos.js">
     </script>
   <script>
     AOS.init();
   </script>
-    <script src="script.js"></script>
 </html>
